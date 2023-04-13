@@ -6,6 +6,9 @@
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+        <script>
+        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
+        </script>
     </head>
 
     <body style="margin: 0; overflow: hidden;">
@@ -17,10 +20,10 @@
                 <a-image
                     src="asset1.png"
                     look-at="[gps-camera]"
-                    scale="1 1 1"
-                    gps-entity-place="latitude: 16.485220; longitude: 102.812696;"
+                    scale="2 2 2"  
+                    gps-entity-place="latitude: 16.48524764749324; longitude: 102.81270874025365;"
                 ></a-image>
-
+            
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
     </body>
